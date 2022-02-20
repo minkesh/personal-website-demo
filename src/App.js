@@ -12,6 +12,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path='/' element={<Home />}>
+          <Route index element={<Home />} />
           <Route path='home' element={<Home />} />
           <Route path='blog' element={<BlogPage />} />
         </Route>
