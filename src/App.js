@@ -13,6 +13,7 @@ function App() {
       <Routes>
         {['/home', '/'].map((path) => <Route path={path} element={<Home />} />) }
         <Route path='/blog' element={<BlogPage />} />
+        <Route index element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
