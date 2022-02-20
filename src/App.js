@@ -11,8 +11,11 @@ function App() {
     <BrowserRouter>
       <Menu />
       <Routes>
-        {['/home', '/'].map((path) => <Route path={path} element={<Home />} />) }
-        <Route path='/blog' element={<BlogPage />} />
+        <Route path='/' element={<Home />}>
+          <Route path={'/home'} element={<Home />} />
+          <Route path='/blog' element={<BlogPage />} />
+        </Route>
+        
         <Route index element={<Home />} />
       </Routes>
     </BrowserRouter>
