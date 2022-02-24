@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path='/personal-website-demo/' element={<Home />}>
           <Route index element={<Home />} />
-          <Route path='home' element={<Home />} />
-          <Route path='blog' element={<BlogPage />} />
+          <Route path='/personal-website-demo/home' element={<Home />} />
+          <Route path='/personal-website-demo/blog' element={<BlogPage />} />
         </Route>
         
         <Route index element={<Home />} />
